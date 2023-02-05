@@ -8,9 +8,14 @@ sequenceDiagram
     
     deactivate server
     
+    browser->>server: GET https://studies.cs.helsinki.fi/exampleapp/note
+    activate server
+    server-->>browser: the HTML file
+    deactivate server
+
     browser->>server: GET https://studies.cs.helsinki.fi/exampleapp/main.css
     activate server
-    server-->>browser: the css file
+    server-->>browser: the CSS file
     deactivate server
     
     browser->>server: GET https://studies.cs.helsinki.fi/exampleapp/main.js
@@ -24,6 +29,10 @@ sequenceDiagram
     activate server
     server-->>browser: [{ "content": "HTML is easy", "date": "2023-1-1" }, ... ]
     deactivate server    
+    browser->>server: GET https://studies.cs.helsinki.fi/exampleapp/favicon.ico
+    activate server
+    server-->>browser: the favicon file
+    deactivate server
 
     Note right of browser: The browser executes the callback function that renders the notes 
 ```
