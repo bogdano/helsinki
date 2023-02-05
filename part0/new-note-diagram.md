@@ -4,9 +4,10 @@ sequenceDiagram
     participant server
     
     browser->>server: POST https://studies.cs.helsinki.fi/exampleapp/new_note
-    activate server
-    
+    activate server    
     deactivate server
+
+    Note right of browser: New not is sent to the server
     
     browser->>server: GET https://studies.cs.helsinki.fi/exampleapp/note
     activate server
