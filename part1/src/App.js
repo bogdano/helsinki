@@ -1,5 +1,5 @@
 const App = () => {
-  const now = new Date('year, monthIndex, day, hours, minutes')
+  const now = new Date()
   const a = 10
   const b = 20
   console.log(now, a+b)
