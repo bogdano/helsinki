@@ -7,7 +7,7 @@ sequenceDiagram
     activate server    
     deactivate server
 
-    Note right of browser: New not is sent to the server
+    Note right of browser: New note is sent to the server
     
     browser->>server: GET https://studies.cs.helsinki.fi/exampleapp/note
     activate server
