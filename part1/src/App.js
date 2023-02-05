@@ -5,7 +5,7 @@ const App = () => {
   console.log(now, a+b)
   return (
     <div>
-      <p>Hello world, it is {now.toString()}</p>
+      <p>Hello world, it is {now.toDateString()}</p>
       <p>
         {a} plus {b} is {a + b}
       </p>
